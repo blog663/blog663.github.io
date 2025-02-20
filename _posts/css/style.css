@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>听松阁环形音乐播放器</title>
-<link rel='stylesheet' href='css/jquery-ui.css'>
 <style>
-
-body { background: url(css/006.jpg) }
+@import url(http://s1.cdn.ryanboylett.co.uk/fonts/fontawesome/fontawesome.css);
+body { background: url(http://s1.cdn.ryanboylett.co.uk/images/wallpapers/006.jpg) }
 .music-player { position: absolute !important; top: 50%; left: 50%; margin: -207px 0 0 -207px }
 
 .music-player
@@ -37,7 +31,7 @@ body { background: url(css/006.jpg) }
   bottom: 0;
   left: 0;
   height: 300px;
-  background: url(css/image_png_00001.png) center bottom repeat-x;
+  background: url(http://s2.cdn.ryanboylett.co.uk/generic/image_png_00001.png) center bottom repeat-x;
 }
 
 .music-player > .dash > a
@@ -124,7 +118,7 @@ body { background: url(css/006.jpg) }
   margin: 0 0 0 -196px;
   border-radius: 100%;
   transform-origin: 50% 50%;
-  background: url(css/image_png_00003.png);
+  background: url(http://s2.cdn.ryanboylett.co.uk/generic/image_png_00003.png);
   transform: rotate(145deg);
 }
 
@@ -258,45 +252,3 @@ body { background: url(css/006.jpg) }
 
 .music-player > .dash > .info > small { font-size: 10px }
 </style>
-<script src="js/prefixfree.min.js"></script>
-</head>
-<body>
-<div class="music-player">
-  <img src="css/wh8.jpg" class="album" />
-  <div class="dash">
-    <a href="#mute" class="fa fa-volume-up"></a>
-    <span class="volume-level">
-      <em style="width: 75%"></em>
-    </span>
-    <a href="#share" class="fa fa-share"></a>
-    <a href="#love" class="fa fa-heart"></a>
-    <div class="seeker">
-      <div class="wheel">
-        <div class="progress"></div>
-      </div>
-    </div>
-    <a href="#seek"></a>
-    <div class="controls">
-      <a href="#back" class="fa fa-fast-backward"></a>
-      <a href="#play" class="fa fa-pause"></a>
-      <a href="#forward" class="fa fa-fast-forward"></a>
-    </div>
-	<div><br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<audio controls autoplay loop>
-        <source src="https://vercel.rryyz.com/free163person/音乐视听/唯美纯音乐/001.半山听雨，放空自己（古琴）-唯美纯音乐.mp3" type="audio/mpeg">
-    </audio>
-	</div>
-    <div class="info">
-      <i><span name="current">0:00</span> / <span name="duration">0:00</span></i>
-      <label>纯音乐</label>
-      <small>001.半山听雨，放空自己（古琴）-唯美纯音乐</small>
-	  
-    </div>
-  </div>
-</div>
-<script src='js/jquery_and_jqueryui.js'></script>
-<script src="js/index.js"></script>
-<div style="text-align:center;clear:both">
-</div>
-</body>
-</html>
